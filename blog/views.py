@@ -1,3 +1,4 @@
+import markdown
 from django.shortcuts import render, get_object_or_404
 from .models import Post
 # Create your views here.
@@ -14,4 +15,12 @@ def index(request):
 
 def detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
+    # 添加Markdown语法拓展，包含额外拓展，语法高亮和自动生成目录
+    post.body = markdown.markdown(post.body, extensions=[
+        'markdown.extensions.extra',
+        'markdown.extensions.codehilite',
+        # 'markdown.extensions.fenced_code',
+        'markdown.extensions.toc',
+    ])
+
     return render(request, 'blog/detail.html', context={'post': post})
