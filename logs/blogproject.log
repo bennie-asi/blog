@@ -244,3 +244,46 @@ INFO 2022-08-29 17:10:40,568 autoreload 677 Watching for file changes with StatR
 INFO 2022-08-29 17:10:41,685 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 14069
 INFO 2022-08-29 17:10:45,445 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 14069
 INFO 2022-08-29 17:10:46,725 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 14069
+INFO 2022-08-29 17:15:09,896 basehttp 187 "GET /admin/blog/post/2/change/ HTTP/1.1" 200 11115
+INFO 2022-08-29 17:15:09,955 basehttp 187 "GET /admin/jsi18n/ HTTP/1.1" 200 8603
+INFO 2022-08-29 17:15:21,400 basehttp 187 "POST /admin/blog/post/2/change/ HTTP/1.1" 302 0
+INFO 2022-08-29 17:15:21,437 basehttp 187 "GET /admin/blog/post/2/change/ HTTP/1.1" 200 11349
+INFO 2022-08-29 17:15:21,480 basehttp 187 "GET /admin/jsi18n/ HTTP/1.1" 200 8603
+INFO 2022-08-29 17:15:24,349 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 14075
+INFO 2022-08-29 17:16:20,162 basehttp 187 "POST /admin/blog/post/2/change/ HTTP/1.1" 302 0
+INFO 2022-08-29 17:16:20,321 basehttp 187 "GET /admin/blog/post/ HTTP/1.1" 200 8118
+INFO 2022-08-29 17:16:20,374 basehttp 187 "GET /admin/jsi18n/ HTTP/1.1" 200 8603
+INFO 2022-08-29 17:16:22,587 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 14208
+INFO 2022-08-29 17:18:24,622 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-29 17:18:25,315 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-29 17:19:10,362 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-29 17:19:11,044 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-29 17:19:17,783 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-29 17:19:18,391 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-29 17:19:40,003 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-29 17:19:40,670 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-29 17:22:04,150 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 13958
+INFO 2022-08-29 17:24:28,894 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-29 17:24:29,527 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-29 17:24:36,352 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-29 17:24:36,952 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-29 17:24:42,121 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 13923
+INFO 2022-08-29 17:24:43,992 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 13923
+INFO 2022-08-29 17:24:51,148 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 13923
+WARNING 2022-08-29 17:24:55,971 log 241 Not Found: /posts/2/index.html
+WARNING 2022-08-29 17:24:55,972 basehttp 187 "GET /posts/2/index.html HTTP/1.1" 404 2480
+WARNING 2022-08-29 17:25:03,992 log 241 Not Found: /posts/2/index.html
+WARNING 2022-08-29 17:25:03,993 basehttp 187 "GET /posts/2/index.html HTTP/1.1" 404 2480
+WARNING 2022-08-29 17:25:11,696 log 241 Not Found: /index.html
+WARNING 2022-08-29 17:25:11,697 basehttp 187 "GET /index.html HTTP/1.1" 404 2456
+WARNING 2022-08-29 17:25:18,277 log 241 Not Found: /index
+WARNING 2022-08-29 17:25:18,278 basehttp 187 "GET /index HTTP/1.1" 404 2441
+WARNING 2022-08-29 17:25:41,868 log 241 Not Found: /[name='index']
+WARNING 2022-08-29 17:25:41,868 basehttp 187 "GET /[name='index'] HTTP/1.1" 404 2504
+INFO 2022-08-29 17:25:52,335 basehttp 187 "GET / HTTP/1.1" 200 10857
+INFO 2022-08-29 17:37:27,552 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-29 17:37:28,231 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-29 17:38:36,429 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-29 17:38:37,044 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-29 17:39:13,821 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 14013
+INFO 2022-08-29 17:39:45,083 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 14013
