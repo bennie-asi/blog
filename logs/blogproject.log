@@ -287,3 +287,9 @@ INFO 2022-08-29 17:38:36,429 autoreload 266 D:\Users\18203\Desktop\work\blogproj
 INFO 2022-08-29 17:38:37,044 autoreload 677 Watching for file changes with StatReloader
 INFO 2022-08-29 17:39:13,821 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 14013
 INFO 2022-08-29 17:39:45,083 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 14013
+INFO 2022-08-29 17:59:04,617 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\models.py changed, reloading.
+INFO 2022-08-29 17:59:05,375 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-29 17:59:21,720 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\models.py changed, reloading.
+INFO 2022-08-29 17:59:22,448 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-29 18:00:11,759 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\models.py changed, reloading.
+INFO 2022-08-29 18:00:12,506 autoreload 677 Watching for file changes with StatReloader

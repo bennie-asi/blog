@@ -1,7 +1,9 @@
+import markdown
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
 from django.utils import timezone
+from django.utils.html import strip_tags
 
 
 # Create your models here.
@@ -9,12 +11,6 @@ from django.utils import timezone
 class Category(models.Model):
     """
     django 要求模型必须继承 models.Model 类。
-    Category 只需要一个简单的分类名 name 就可以了。
-    CharField 指定了分类名 name 的数据类型，CharField 是字符型，
-    CharField 的 max_length 参数指定其最大长度，超过这个长度的分类名就不能被存入数据库。
-    当然 django 还为我们提供了多种其它的数据类型，如日期时间类型 DateTimeField、整数类型 IntegerField 等等。
-    django 内置的全部类型可查看文档：
-    https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types
     """
     name = models.CharField(max_length=100)
 
@@ -91,6 +87,18 @@ class Post(models.Model):
 
     def save(self, *args, **kwargs):
         self.modified_time = timezone.now()
+
+        # 首先实例化一个 Markdown 类，用于渲染 body 的文本。
+        # 由于摘要并不需要生成文章目录，所以去掉了目录拓展。
+        md = markdown.Markdown(extensions=[
+            'markdown.extensions.extra',
+            'markdown.extensions.codehilite',
+        ])
+
+        # 先将 Markdown 文本渲染成 HTML 文本
+        # strip_tags 去掉 HTML 文本的全部 HTML 标签
+        # 从文本摘取前 54 个字符赋给 excerpt
+        self.excerpt = strip_tags(md.convert(self.body))[:54]
         super().save(*args, **kwargs)
 
     def get_absolute_url(self):
