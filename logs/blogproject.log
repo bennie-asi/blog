@@ -8,3 +8,80 @@ INFO 2022-08-26 14:59:40,725 autoreload 677 Watching for file changes with StatR
 INFO 2022-08-26 15:02:42,894 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\models.py changed, reloading.
 INFO 2022-08-26 15:02:43,558 autoreload 677 Watching for file changes with StatReloader
 INFO 2022-08-26 15:15:00,684 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-26 15:50:27,733 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-26 15:50:32,348 basehttp 187 "GET / HTTP/1.1" 200 30
+INFO 2022-08-26 15:53:12,650 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-26 15:53:14,367 basehttp 187 "GET / HTTP/1.1" 200 30
+INFO 2022-08-26 16:06:26,538 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blogproject\settings.py changed, reloading.
+INFO 2022-08-26 16:06:27,454 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-26 16:07:38,673 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-26 16:07:39,345 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-26 16:07:46,372 basehttp 187 "GET / HTTP/1.1" 200 140
+INFO 2022-08-26 16:07:49,552 basehttp 187 "GET / HTTP/1.1" 200 140
+INFO 2022-08-26 16:07:58,076 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-26 16:07:58,686 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-26 16:08:00,337 basehttp 187 "GET / HTTP/1.1" 200 140
+INFO 2022-08-26 16:08:17,414 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-26 16:08:18,076 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-26 16:08:22,925 basehttp 187 "GET / HTTP/1.1" 200 170
+INFO 2022-08-26 16:08:23,955 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-26 16:08:24,673 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-26 16:21:32,743 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-26 16:21:34,822 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-26 16:25:12,079 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-26 16:25:12,797 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-26 16:26:00,904 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-26 16:26:01,780 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-26 16:26:54,024 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-26 16:26:54,778 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-26 16:46:11,032 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-26 16:46:13,182 basehttp 187 "GET / HTTP/1.1" 200 14541
+WARNING 2022-08-26 16:46:13,480 log 241 Not Found: /css/bootstrap.min.css
+WARNING 2022-08-26 16:46:13,481 log 241 Not Found: /css/custom.css
+WARNING 2022-08-26 16:46:13,483 log 241 Not Found: /js/pace.min.js
+WARNING 2022-08-26 16:46:13,486 log 241 Not Found: /css/pace.css
+WARNING 2022-08-26 16:46:13,488 log 241 Not Found: /js/bootstrap.min.js
+WARNING 2022-08-26 16:46:13,489 log 241 Not Found: /js/jquery-2.1.3.min.js
+WARNING 2022-08-26 16:46:13,491 basehttp 187 "GET /css/bootstrap.min.css HTTP/1.1" 404 2306
+WARNING 2022-08-26 16:46:13,492 basehttp 187 "GET /css/custom.css HTTP/1.1" 404 2285
+WARNING 2022-08-26 16:46:13,493 basehttp 187 "GET /js/pace.min.js HTTP/1.1" 404 2285
+WARNING 2022-08-26 16:46:13,494 basehttp 187 "GET /css/pace.css HTTP/1.1" 404 2279
+WARNING 2022-08-26 16:46:13,495 basehttp 187 "GET /js/bootstrap.min.js HTTP/1.1" 404 2300
+WARNING 2022-08-26 16:46:13,499 basehttp 187 "GET /js/jquery-2.1.3.min.js HTTP/1.1" 404 2309
+WARNING 2022-08-26 16:46:13,521 log 241 Not Found: /js/modernizr.custom.js
+WARNING 2022-08-26 16:46:13,523 log 241 Not Found: /js/script.js
+WARNING 2022-08-26 16:46:13,524 basehttp 187 "GET /js/modernizr.custom.js HTTP/1.1" 404 2309
+WARNING 2022-08-26 16:46:13,526 basehttp 187 "GET /js/script.js HTTP/1.1" 404 2279
+INFO 2022-08-26 16:51:22,680 basehttp 187 "GET / HTTP/1.1" 200 14665
+INFO 2022-08-26 16:51:23,910 basehttp 187 "GET /static/blog/css/custom.css HTTP/1.1" 200 15473
+INFO 2022-08-26 16:51:23,910 basehttp 187 "GET /static/blog/css/pace.css HTTP/1.1" 200 189
+INFO 2022-08-26 16:51:23,913 basehttp 187 "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84322
+INFO 2022-08-26 16:51:23,915 basehttp 187 "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8374
+INFO 2022-08-26 16:51:23,915 basehttp 187 "GET /static/blog/js/script.js HTTP/1.1" 200 4461
+INFO 2022-08-26 16:51:23,920 basehttp 187 "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35458
+INFO 2022-08-26 16:51:23,926 basehttp 187 "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12332
+INFO 2022-08-26 16:51:23,929 basehttp 187 "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117154
+INFO 2022-08-26 17:02:25,598 basehttp 187 "GET / HTTP/1.1" 200 8522
+INFO 2022-08-26 17:02:25,660 basehttp 187 "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2022-08-26 17:02:25,666 basehttp 187 "GET /static/blog/css/pace.css HTTP/1.1" 304 0
+INFO 2022-08-26 17:02:25,671 basehttp 187 "GET /static/blog/css/custom.css HTTP/1.1" 304 0
+INFO 2022-08-26 17:02:25,672 basehttp 187 "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 304 0
+INFO 2022-08-26 17:02:25,673 basehttp 187 "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 304 0
+INFO 2022-08-26 17:02:25,674 basehttp 187 "GET /static/blog/js/script.js HTTP/1.1" 304 0
+INFO 2022-08-26 17:02:25,675 basehttp 187 "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2022-08-26 17:02:25,675 basehttp 187 "GET /static/blog/js/pace.min.js HTTP/1.1" 304 0
+INFO 2022-08-26 17:02:32,529 basehttp 187 "GET / HTTP/1.1" 200 8522
+INFO 2022-08-29 09:38:18,676 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-29 09:38:22,814 basehttp 187 "GET / HTTP/1.1" 200 8522
+INFO 2022-08-29 09:38:22,902 basehttp 187 "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2022-08-29 09:38:22,910 basehttp 187 "GET /static/blog/css/pace.css HTTP/1.1" 304 0
+INFO 2022-08-29 09:38:22,915 basehttp 187 "GET /static/blog/css/custom.css HTTP/1.1" 304 0
+INFO 2022-08-29 09:38:22,915 basehttp 187 "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 304 0
+INFO 2022-08-29 09:38:22,922 basehttp 187 "GET /static/blog/js/script.js HTTP/1.1" 304 0
+INFO 2022-08-29 09:38:22,922 basehttp 187 "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2022-08-29 09:38:22,923 basehttp 187 "GET /static/blog/js/pace.min.js HTTP/1.1" 304 0
+INFO 2022-08-29 09:38:22,924 basehttp 187 "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 304 0
+WARNING 2022-08-29 09:38:23,299 log 241 Not Found: /favicon.ico
+WARNING 2022-08-29 09:38:23,300 basehttp 187 "GET /favicon.ico HTTP/1.1" 404 2276
+INFO 2022-08-29 09:40:54,414 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-29 09:40:58,041 autoreload 677 Watching for file changes with StatReloader
