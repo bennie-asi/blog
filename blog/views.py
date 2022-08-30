@@ -4,9 +4,11 @@ import markdown
 from django.shortcuts import render, get_object_or_404
 from django.utils.text import slugify
 from markdown.extensions.toc import TocExtension
-from .models import Post
+from .models import Post, Category, Tag
 # Create your views here.
 from django.http import HttpResponse
+
+'''文章列表'''
 
 
 def index(request):
@@ -15,6 +17,9 @@ def index(request):
     return render(request, 'blog/index.html', context={
         'post_list': post_list
     })
+
+
+'''文章详情'''
 
 
 def detail(request, pk):
@@ -33,3 +38,32 @@ def detail(request, pk):
     m = re.search(r'<div class="toc">\s*<ul>(.*)</ul>\s*</div>', md.toc, re.S)
     post.toc = m.group(1) if m is not None else ''
     return render(request, 'blog/detail.html', context={'post': post})
+
+
+'''归档'''
+
+
+def archive(request, year, month):
+    post_list = Post.objects.filter(created_time__year=year,
+                                    created_time__month=month
+                                    ).order_by('-created_time')
+    return render(request, 'blog/index.html', context={'post_list': post_list})
+
+
+'''分类，通过传入分类的id值来从数据库中获取值'''
+
+
+def category(request, pk):
+    cate = get_object_or_404(Category, pk=pk)
+    post_list = Post.objects.filter(category=cate).order_by('-created_time')
+    return render(request, 'blog/index.html', context={'post_list': post_list})
+
+
+'''标签'''
+
+
+def tag(request, pk):
+    t = get_object_or_404(Tag, pk=pk)
+    post_list = Post.objects.filter(tags=t).order_by('-created_time')
+    return render(request, 'blog/index.html', context={'post_list': post_list})
+

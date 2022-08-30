@@ -324,3 +324,59 @@ INFO 2022-08-30 10:52:12,148 basehttp 187 "GET / HTTP/1.1" 200 8807
 INFO 2022-08-30 10:52:42,994 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blogproject\settings.py changed, reloading.
 INFO 2022-08-30 10:52:43,712 autoreload 677 Watching for file changes with StatReloader
 INFO 2022-08-30 10:52:47,305 basehttp 187 "GET / HTTP/1.1" 200 8812
+WARNING 2022-08-30 10:56:21,651 log 241 Not Found: /full-width.html
+WARNING 2022-08-30 10:56:21,651 basehttp 187 "GET /full-width.html HTTP/1.1" 404 2471
+INFO 2022-08-30 10:58:10,398 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\templatetags\blog_extras.py changed, reloading.
+INFO 2022-08-30 10:58:11,261 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 11:12:14,253 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 11:12:18,059 basehttp 187 "GET / HTTP/1.1" 200 8850
+WARNING 2022-08-30 11:12:22,456 log 241 Not Found: /archives/2022/8/}
+WARNING 2022-08-30 11:12:22,457 basehttp 187 "GET /archives/2022/8/%7D HTTP/1.1" 404 2686
+WARNING 2022-08-30 11:12:34,688 log 241 Not Found: /archives/2022/8/}
+WARNING 2022-08-30 11:12:34,688 basehttp 187 "GET /archives/2022/8/%7D HTTP/1.1" 404 2686
+WARNING 2022-08-30 11:14:30,195 log 241 Not Found: /archives/2022/8/}
+WARNING 2022-08-30 11:14:30,196 basehttp 187 "GET /archives/2022/8/%7D HTTP/1.1" 404 2686
+INFO 2022-08-30 11:15:08,337 basehttp 187 "GET /archives/2022/8 HTTP/1.1" 301 0
+INFO 2022-08-30 11:15:08,444 basehttp 187 "GET /archives/2022/8/ HTTP/1.1" 200 8850
+WARNING 2022-08-30 11:15:23,573 log 241 Not Found: /archives/2022/8/}
+WARNING 2022-08-30 11:15:23,573 basehttp 187 "GET /archives/2022/8/%7D HTTP/1.1" 404 2686
+WARNING 2022-08-30 11:15:42,813 log 241 Not Found: /archives/2022/8/}
+WARNING 2022-08-30 11:15:42,813 basehttp 187 "GET /archives/2022/8/%7D HTTP/1.1" 404 2686
+WARNING 2022-08-30 11:15:46,340 log 241 Not Found: /archives/2022/8/}
+WARNING 2022-08-30 11:15:46,341 basehttp 187 "GET /archives/2022/8/%7D HTTP/1.1" 404 2686
+WARNING 2022-08-30 11:18:09,673 log 241 Not Found: /archives/2022/8/}
+WARNING 2022-08-30 11:18:09,673 basehttp 187 "GET /archives/2022/8/%7D HTTP/1.1" 404 2686
+WARNING 2022-08-30 11:18:15,707 log 241 Not Found: /archives/2022/8/}
+WARNING 2022-08-30 11:18:15,707 basehttp 187 "GET /archives/2022/8/%7D HTTP/1.1" 404 2686
+INFO 2022-08-30 11:18:23,473 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 11:18:38,422 basehttp 187 "GET / HTTP/1.1" 200 8849
+INFO 2022-08-30 11:18:40,451 basehttp 187 "GET /archives/2022/8/ HTTP/1.1" 200 8849
+INFO 2022-08-30 11:38:48,308 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 11:38:51,686 basehttp 187 "GET / HTTP/1.1" 200 8913
+INFO 2022-08-30 11:39:01,597 basehttp 187 "GET /categories2/ HTTP/1.1" 200 8913
+INFO 2022-08-30 11:39:04,299 basehttp 187 "GET /categories1/ HTTP/1.1" 200 7695
+INFO 2022-08-30 11:39:08,255 basehttp 187 "GET /categories2/ HTTP/1.1" 200 8913
+INFO 2022-08-30 11:39:10,792 basehttp 187 "GET /categories1/ HTTP/1.1" 200 7695
+INFO 2022-08-30 11:39:12,696 basehttp 187 "GET /categories2/ HTTP/1.1" 200 8913
+INFO 2022-08-30 11:39:17,136 basehttp 187 "GET /categories1/ HTTP/1.1" 200 7695
+INFO 2022-08-30 11:39:18,668 basehttp 187 "GET /categories2/ HTTP/1.1" 200 8913
+INFO 2022-08-30 11:41:15,907 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\urls.py changed, reloading.
+INFO 2022-08-30 11:41:16,562 autoreload 677 Watching for file changes with StatReloader
+WARNING 2022-08-30 11:43:27,304 log 241 Not Found: /categories2/
+WARNING 2022-08-30 11:43:27,304 basehttp 187 "GET /categories2/ HTTP/1.1" 404 2859
+INFO 2022-08-30 11:43:36,812 basehttp 187 "GET /categories/2/ HTTP/1.1" 200 8915
+INFO 2022-08-30 11:43:41,430 basehttp 187 "GET /categories/2/ HTTP/1.1" 200 8915
+INFO 2022-08-30 11:43:42,593 basehttp 187 "GET /categories/1/ HTTP/1.1" 200 7697
+INFO 2022-08-30 11:43:44,192 basehttp 187 "GET /categories/2/ HTTP/1.1" 200 8915
+INFO 2022-08-30 11:43:44,909 basehttp 187 "GET /categories/1/ HTTP/1.1" 200 7697
+INFO 2022-08-30 11:43:45,680 basehttp 187 "GET /categories/2/ HTTP/1.1" 200 8915
+INFO 2022-08-30 11:43:46,938 basehttp 187 "GET /categories/1/ HTTP/1.1" 200 7697
+INFO 2022-08-30 11:43:49,406 basehttp 187 "GET /categories/2/ HTTP/1.1" 200 8915
+INFO 2022-08-30 11:43:50,429 basehttp 187 "GET /categories/1/ HTTP/1.1" 200 7697
+INFO 2022-08-30 11:43:51,695 basehttp 187 "GET /categories/2/ HTTP/1.1" 200 8915
+INFO 2022-08-30 11:48:12,964 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-30 11:48:13,641 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 11:49:12,548 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\urls.py changed, reloading.
+INFO 2022-08-30 11:49:13,299 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 11:50:32,236 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-30 11:50:33,050 autoreload 677 Watching for file changes with StatReloader

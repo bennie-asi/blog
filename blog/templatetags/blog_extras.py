@@ -34,5 +34,5 @@ def show_categories(context):
 @register.inclusion_tag('blog/inclusions/_tags.html', takes_context=True)
 def show_tags(context):
     return {
-        'tag_list':Tag.objects.all(),
+        'tag_list': Tag.objects.all(),
     }
