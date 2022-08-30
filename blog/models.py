@@ -80,6 +80,8 @@ class Post(models.Model):
     class Meta:
         verbose_name = "文章"
         verbose_name_plural = verbose_name
+        # 指定模型类以创建时间逆序排序
+        ordering = ['-created_time']
 
     def __str__(self):
         return self.title

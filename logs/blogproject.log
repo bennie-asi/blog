@@ -1296,3 +1296,277 @@ INFO 2022-08-30 16:16:07,691 autoreload 266 D:\Users\18203\Desktop\work\blogproj
 INFO 2022-08-30 16:16:08,534 autoreload 677 Watching for file changes with StatReloader
 INFO 2022-08-30 16:16:11,213 autoreload 677 Watching for file changes with StatReloader
 INFO 2022-08-30 16:16:12,615 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 10232
+INFO 2022-08-30 16:29:01,453 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 16:29:07,332 basehttp 187 "GET / HTTP/1.1" 200 8691
+INFO 2022-08-30 16:29:09,948 basehttp 187 "GET / HTTP/1.1" 200 8691
+INFO 2022-08-30 16:29:11,764 basehttp 187 "GET / HTTP/1.1" 200 8691
+INFO 2022-08-30 16:29:12,532 basehttp 187 "GET / HTTP/1.1" 200 8691
+INFO 2022-08-30 16:29:13,432 basehttp 187 "GET / HTTP/1.1" 200 8691
+WARNING 2022-08-30 16:29:23,741 log 241 Not Found: /full-width.html
+WARNING 2022-08-30 16:29:23,742 basehttp 187 "GET /full-width.html HTTP/1.1" 404 3237
+WARNING 2022-08-30 16:30:19,256 log 241 Not Found: /posts/2/index.html
+WARNING 2022-08-30 16:30:19,256 basehttp 187 "GET /posts/2/index.html HTTP/1.1" 404 3246
+WARNING 2022-08-30 16:30:26,120 log 241 Not Found: /posts/2/index.html
+WARNING 2022-08-30 16:30:26,120 basehttp 187 "GET /posts/2/index.html HTTP/1.1" 404 3246
+WARNING 2022-08-30 16:30:53,017 log 241 Not Found: /posts/2/index.html
+WARNING 2022-08-30 16:30:53,017 basehttp 187 "GET /posts/2/index.html HTTP/1.1" 404 3246
+INFO 2022-08-30 16:31:12,070 autoreload 677 Watching for file changes with StatReloader
+WARNING 2022-08-30 16:31:18,198 log 241 Not Found: /posts/2/index.html
+WARNING 2022-08-30 16:31:18,199 basehttp 187 "GET /posts/2/index.html HTTP/1.1" 404 3246
+ERROR 2022-08-30 16:31:21,639 log 241 Internal Server Error: /posts/2/
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: '/blog'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 40, in detail
+    return render(request, 'blog/detail.html', context={'post': post})
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: '/blog' is not a registered namespace
+ERROR 2022-08-30 16:31:21,643 basehttp 187 "GET /posts/2/ HTTP/1.1" 500 150244
+ERROR 2022-08-30 16:31:28,175 log 241 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: '/blog'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 17, in index
+    return render(request, 'blog/index.html', context={
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: '/blog' is not a registered namespace
+ERROR 2022-08-30 16:31:28,177 basehttp 187 "GET / HTTP/1.1" 500 148347
+ERROR 2022-08-30 16:31:29,294 log 241 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: '/blog'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 17, in index
+    return render(request, 'blog/index.html', context={
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: '/blog' is not a registered namespace
+ERROR 2022-08-30 16:31:29,296 basehttp 187 "GET / HTTP/1.1" 500 148347
+ERROR 2022-08-30 16:31:30,086 log 241 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: '/blog'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 17, in index
+    return render(request, 'blog/index.html', context={
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: '/blog' is not a registered namespace
+ERROR 2022-08-30 16:31:30,088 basehttp 187 "GET / HTTP/1.1" 500 148347
+INFO 2022-08-30 16:31:49,206 autoreload 677 Watching for file changes with StatReloader
+ERROR 2022-08-30 16:31:53,099 log 241 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 17, in index
+    return render(request, 'blog/index.html', context={
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\resolvers.py", line 803, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index/' not found. 'index/' is not a valid view function or pattern name.
+ERROR 2022-08-30 16:31:53,103 basehttp 187 "GET / HTTP/1.1" 500 147028
+INFO 2022-08-30 16:32:07,831 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 16:32:09,876 basehttp 187 "GET / HTTP/1.1" 200 8691
+INFO 2022-08-30 16:32:52,843 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 10214
+INFO 2022-08-30 16:32:55,329 basehttp 187 "GET / HTTP/1.1" 200 8691
+INFO 2022-08-30 16:32:56,912 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 10214
+INFO 2022-08-30 16:32:58,687 basehttp 187 "GET / HTTP/1.1" 200 8691
+INFO 2022-08-30 16:32:59,803 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 10214
+INFO 2022-08-30 16:33:03,765 basehttp 187 "GET / HTTP/1.1" 200 8691
+WARNING 2022-08-30 16:33:09,054 log 241 Not Found: /full-width.html
+WARNING 2022-08-30 16:33:09,055 basehttp 187 "GET /full-width.html HTTP/1.1" 404 3237
+INFO 2022-08-30 16:33:12,575 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 10214
+INFO 2022-08-30 16:33:14,119 basehttp 187 "GET / HTTP/1.1" 200 8691
+INFO 2022-08-30 16:33:16,642 basehttp 187 "GET / HTTP/1.1" 200 8691
+INFO 2022-08-30 16:33:17,875 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 10214
+INFO 2022-08-30 16:33:20,009 basehttp 187 "GET / HTTP/1.1" 200 8691
+INFO 2022-08-30 16:34:35,383 basehttp 187 "GET / HTTP/1.1" 200 8682
+INFO 2022-08-30 16:34:40,797 basehttp 187 "GET / HTTP/1.1" 200 8682
+INFO 2022-08-30 16:34:45,497 basehttp 187 "GET / HTTP/1.1" 200 8682
+INFO 2022-08-30 16:35:16,148 basehttp 187 "GET / HTTP/1.1" 200 8682
+INFO 2022-08-30 16:36:58,938 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 16:37:00,545 basehttp 187 "GET / HTTP/1.1" 200 8690
+INFO 2022-08-30 16:37:02,424 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 10205
+INFO 2022-08-30 16:40:17,971 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 16:40:20,610 basehttp 187 "GET / HTTP/1.1" 200 8711
+INFO 2022-08-30 16:40:23,927 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 10205
+INFO 2022-08-30 16:40:45,360 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 10205
