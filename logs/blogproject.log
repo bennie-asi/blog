@@ -380,3 +380,919 @@ INFO 2022-08-30 11:49:12,548 autoreload 266 D:\Users\18203\Desktop\work\blogproj
 INFO 2022-08-30 11:49:13,299 autoreload 677 Watching for file changes with StatReloader
 INFO 2022-08-30 11:50:32,236 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
 INFO 2022-08-30 11:50:33,050 autoreload 677 Watching for file changes with StatReloader
+ERROR 2022-08-30 11:51:11,135 log 241 Internal Server Error: /categories/2/
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 59, in category
+    return render(request, 'blog/index.html', context={'post_list': post_list})
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\library.py", line 278, in render
+    return t.render(new_context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\resolvers.py", line 803, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'tag tag.pk' not found. 'tag tag.pk' is not a valid view function or pattern name.
+ERROR 2022-08-30 11:51:11,142 basehttp 187 "GET /categories/2/ HTTP/1.1" 500 182964
+ERROR 2022-08-30 11:51:15,927 log 241 Internal Server Error: /categories/2/
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 59, in category
+    return render(request, 'blog/index.html', context={'post_list': post_list})
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\library.py", line 278, in render
+    return t.render(new_context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\resolvers.py", line 803, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'tag tag.pk' not found. 'tag tag.pk' is not a valid view function or pattern name.
+ERROR 2022-08-30 11:51:15,930 basehttp 187 "GET /categories/2/ HTTP/1.1" 500 182743
+ERROR 2022-08-30 11:51:21,520 log 241 Internal Server Error: /categories/1/
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 59, in category
+    return render(request, 'blog/index.html', context={'post_list': post_list})
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\library.py", line 278, in render
+    return t.render(new_context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\resolvers.py", line 803, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'tag tag.pk' not found. 'tag tag.pk' is not a valid view function or pattern name.
+ERROR 2022-08-30 11:51:21,523 basehttp 187 "GET /categories/1/ HTTP/1.1" 500 182185
+INFO 2022-08-30 11:53:29,707 basehttp 187 "GET /categories/1/ HTTP/1.1" 200 7711
+INFO 2022-08-30 11:53:31,997 basehttp 187 "GET /categories/1/ HTTP/1.1" 200 7711
+INFO 2022-08-30 11:53:33,998 basehttp 187 "GET /categories/2/ HTTP/1.1" 200 8929
+INFO 2022-08-30 11:53:37,133 basehttp 187 "GET /tags/1/ HTTP/1.1" 200 7711
+INFO 2022-08-30 11:53:39,029 basehttp 187 "GET /tags/2/ HTTP/1.1" 200 8929
+INFO 2022-08-30 11:55:23,380 basehttp 187 "GET /tags/2/ HTTP/1.1" 200 8805
+INFO 2022-08-30 15:11:30,715 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 15:12:06,135 basehttp 187 "GET / HTTP/1.1" 200 8805
+ERROR 2022-08-30 15:12:10,091 log 241 Internal Server Error: /posts/2/
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'comments_extras'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 40, in detail
+    return render(request, 'blog/detail.html', context={'post': post})
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'comments_extras' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+blog_extras
+cache
+i18n
+l10n
+log
+static
+tz
+ERROR 2022-08-30 15:12:10,096 basehttp 187 "GET /posts/2/ HTTP/1.1" 500 183213
+INFO 2022-08-30 15:12:46,618 basehttp 187 "GET / HTTP/1.1" 200 8805
+ERROR 2022-08-30 15:12:48,362 log 241 Internal Server Error: /posts/2/
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'comments_extras'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 40, in detail
+    return render(request, 'blog/detail.html', context={'post': post})
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'comments_extras' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+blog_extras
+cache
+i18n
+l10n
+log
+static
+tz
+ERROR 2022-08-30 15:12:48,364 basehttp 187 "GET /posts/2/ HTTP/1.1" 500 183213
+INFO 2022-08-30 15:14:41,009 autoreload 677 Watching for file changes with StatReloader
+ERROR 2022-08-30 15:14:46,653 log 241 Internal Server Error: /posts/2/
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'comments_extras'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 40, in detail
+    return render(request, 'blog/detail.html', context={'post': post})
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'comments_extras' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+blog_extras
+cache
+i18n
+l10n
+log
+static
+tz
+ERROR 2022-08-30 15:14:46,658 basehttp 187 "GET /posts/2/ HTTP/1.1" 500 181952
+INFO 2022-08-30 15:22:56,709 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 15:23:02,990 basehttp 187 "GET / HTTP/1.1" 200 8805
+ERROR 2022-08-30 15:23:05,882 log 241 Internal Server Error: /posts/2/
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'comments_extras'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 40, in detail
+    return render(request, 'blog/detail.html', context={'post': post})
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'comments_extras' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+blog_extras
+cache
+i18n
+l10n
+log
+static
+tz
+ERROR 2022-08-30 15:23:05,888 basehttp 187 "GET /posts/2/ HTTP/1.1" 500 181815
+INFO 2022-08-30 15:27:06,133 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 15:27:08,363 basehttp 187 "GET / HTTP/1.1" 200 8805
+ERROR 2022-08-30 15:27:10,260 log 241 Internal Server Error: /posts/2/
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'comments_extras'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 40, in detail
+    return render(request, 'blog/detail.html', context={'post': post})
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'comments_extras' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+blog_extras
+cache
+i18n
+l10n
+log
+static
+tz
+ERROR 2022-08-30 15:27:10,269 basehttp 187 "GET /posts/2/ HTTP/1.1" 500 181820
+INFO 2022-08-30 15:28:33,684 autoreload 677 Watching for file changes with StatReloader
+ERROR 2022-08-30 15:28:40,706 log 241 Internal Server Error: /posts/2/
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'comments_extras'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 40, in detail
+    return render(request, 'blog/detail.html', context={'post': post})
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'comments_extras' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+blog_extras
+cache
+i18n
+l10n
+log
+static
+tz
+ERROR 2022-08-30 15:28:40,710 basehttp 187 "GET /posts/2/ HTTP/1.1" 500 181957
+INFO 2022-08-30 15:29:15,940 autoreload 677 Watching for file changes with StatReloader
+ERROR 2022-08-30 15:29:18,382 log 241 Internal Server Error: /posts/2/
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'comments_extras'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 40, in detail
+    return render(request, 'blog/detail.html', context={'post': post})
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'comments_extras' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+blog_extras
+cache
+i18n
+l10n
+log
+static
+tz
+ERROR 2022-08-30 15:29:18,385 basehttp 187 "GET /posts/2/ HTTP/1.1" 500 163721
+INFO 2022-08-30 15:31:24,451 autoreload 677 Watching for file changes with StatReloader
+ERROR 2022-08-30 15:31:28,572 log 241 Internal Server Error: /posts/2/
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'comments'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 40, in detail
+    return render(request, 'blog/detail.html', context={'post': post})
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\library.py", line 278, in render
+    return t.render(new_context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'comments' is not a registered namespace
+ERROR 2022-08-30 15:31:28,580 basehttp 187 "GET /posts/2/ HTTP/1.1" 500 196098
+INFO 2022-08-30 15:32:07,478 autoreload 677 Watching for file changes with StatReloader
+ERROR 2022-08-30 15:32:10,981 log 241 Internal Server Error: /posts/2/
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'comments'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 40, in detail
+    return render(request, 'blog/detail.html', context={'post': post})
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\library.py", line 278, in render
+    return t.render(new_context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'comments' is not a registered namespace
+ERROR 2022-08-30 15:32:10,987 basehttp 187 "GET /posts/2/ HTTP/1.1" 500 196098
+INFO 2022-08-30 15:37:23,476 autoreload 677 Watching for file changes with StatReloader
+ERROR 2022-08-30 15:37:26,507 log 241 Internal Server Error: /posts/2/
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'comments'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 40, in detail
+    return render(request, 'blog/detail.html', context={'post': post})
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\library.py", line 278, in render
+    return t.render(new_context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'comments' is not a registered namespace
+ERROR 2022-08-30 15:37:26,516 basehttp 187 "GET /posts/2/ HTTP/1.1" 500 196098
+INFO 2022-08-30 15:41:44,082 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blogproject\urls.py changed, reloading.
+INFO 2022-08-30 15:41:44,733 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 15:42:06,516 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blogproject\urls.py changed, reloading.
+INFO 2022-08-30 15:42:07,240 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 15:42:09,328 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 15:42:30,527 autoreload 266 D:\Users\18203\Desktop\work\blogproject\comments\views.py changed, reloading.
+INFO 2022-08-30 15:42:31,362 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 15:42:55,335 autoreload 266 D:\Users\18203\Desktop\work\blogproject\comments\views.py changed, reloading.
+INFO 2022-08-30 15:42:56,066 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 15:42:58,976 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 15:43:01,255 basehttp 187 "GET / HTTP/1.1" 200 8805
+INFO 2022-08-30 15:43:05,356 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 11950
+INFO 2022-08-30 15:43:56,738 basehttp 187 "POST /comment/2 HTTP/1.1" 302 0
+INFO 2022-08-30 15:43:56,783 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 11950
+INFO 2022-08-30 15:44:46,548 basehttp 187 "POST /comment/2 HTTP/1.1" 302 0
+INFO 2022-08-30 15:44:46,582 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 11950
+INFO 2022-08-30 15:52:04,902 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 15:52:13,585 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 11950
+INFO 2022-08-30 15:53:59,027 basehttp 187 "POST /comment/2 HTTP/1.1" 200 7678
+INFO 2022-08-30 15:54:13,175 basehttp 187 "POST /comment/2 HTTP/1.1" 200 7655
+INFO 2022-08-30 15:55:34,250 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blogproject\urls.py changed, reloading.
+INFO 2022-08-30 15:55:35,049 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 15:56:22,564 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 15:56:26,797 basehttp 187 "POST /comment/2 HTTP/1.1" 200 7655
+WARNING 2022-08-30 15:56:28,770 log 241 Not Found: /comment/index.html
+WARNING 2022-08-30 15:56:28,771 basehttp 187 "GET /comment/index.html HTTP/1.1" 404 3246
+INFO 2022-08-30 15:56:36,116 basehttp 187 "GET / HTTP/1.1" 200 8805
+INFO 2022-08-30 15:56:38,472 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 11950
+INFO 2022-08-30 15:59:58,394 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 16:00:02,851 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 13464
+INFO 2022-08-30 16:00:17,969 basehttp 187 "POST /comment/2 HTTP/1.1" 200 7984
+INFO 2022-08-30 16:01:10,423 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 11952
+INFO 2022-08-30 16:01:24,349 basehttp 187 "POST /comment/2 HTTP/1.1" 200 7984
+INFO 2022-08-30 16:01:28,570 basehttp 187 "POST /comment/2 HTTP/1.1" 200 7984
+INFO 2022-08-30 16:01:31,439 basehttp 187 "POST /comment/2 HTTP/1.1" 200 7984
+INFO 2022-08-30 16:08:07,035 basehttp 187 "POST /comment/2 HTTP/1.1" 200 7886
+INFO 2022-08-30 16:10:46,556 autoreload 266 D:\Users\18203\Desktop\work\blogproject\comments\views.py changed, reloading.
+INFO 2022-08-30 16:10:47,253 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 16:12:40,790 autoreload 266 D:\Users\18203\Desktop\work\blogproject\comments\templatetags\comments_extras.py changed, reloading.
+INFO 2022-08-30 16:12:41,499 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 16:13:00,082 autoreload 266 D:\Users\18203\Desktop\work\blogproject\comments\templatetags\comments_extras.py changed, reloading.
+INFO 2022-08-30 16:13:00,821 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 16:13:08,253 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 11854
+INFO 2022-08-30 16:15:27,507 autoreload 677 Watching for file changes with StatReloader
+ERROR 2022-08-30 16:15:28,937 log 241 Internal Server Error: /posts/2/
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'show_comments'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\Desktop\work\blogproject\blog\views.py", line 40, in detail
+    return render(request, 'blog/detail.html', context={'post': post})
+  File "D:\Users\18203\blog\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 27: 'show_comments', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2022-08-30 16:15:28,942 basehttp 187 "GET /posts/2/ HTTP/1.1" 500 178148
+INFO 2022-08-30 16:16:07,691 autoreload 266 D:\Users\18203\Desktop\work\blogproject\comments\templatetags\comments_extras.py changed, reloading.
+INFO 2022-08-30 16:16:08,534 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 16:16:11,213 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 16:16:12,615 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 10232
