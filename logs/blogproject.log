@@ -293,3 +293,34 @@ INFO 2022-08-29 17:59:21,720 autoreload 266 D:\Users\18203\Desktop\work\blogproj
 INFO 2022-08-29 17:59:22,448 autoreload 677 Watching for file changes with StatReloader
 INFO 2022-08-29 18:00:11,759 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\models.py changed, reloading.
 INFO 2022-08-29 18:00:12,506 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 09:56:28,148 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 09:56:32,310 basehttp 187 "GET / HTTP/1.1" 200 10857
+INFO 2022-08-30 09:56:32,369 basehttp 187 "GET /static/blog/css/custom.css HTTP/1.1" 304 0
+INFO 2022-08-30 09:56:32,369 basehttp 187 "GET /static/blog/js/pace.min.js HTTP/1.1" 304 0
+INFO 2022-08-30 09:56:32,369 basehttp 187 "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2022-08-30 09:56:32,369 basehttp 187 "GET /static/blog/css/pace.css HTTP/1.1" 304 0
+INFO 2022-08-30 09:56:32,369 basehttp 187 "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2022-08-30 09:56:32,370 basehttp 187 "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 304 0
+INFO 2022-08-30 09:56:32,374 basehttp 187 "GET /static/blog/js/script.js HTTP/1.1" 304 0
+INFO 2022-08-30 09:56:32,374 basehttp 187 "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 304 0
+WARNING 2022-08-30 09:56:32,867 log 241 Not Found: /favicon.ico
+WARNING 2022-08-30 09:56:32,868 basehttp 187 "GET /favicon.ico HTTP/1.1" 404 2459
+INFO 2022-08-30 10:42:56,655 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 10:43:19,368 basehttp 187 "GET / HTTP/1.1" 200 8754
+INFO 2022-08-30 10:44:26,835 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 11910
+INFO 2022-08-30 10:44:29,814 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 11910
+INFO 2022-08-30 10:44:46,253 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 11910
+INFO 2022-08-30 10:47:21,644 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 10:48:30,938 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blogproject\settings.py changed, reloading.
+INFO 2022-08-30 10:48:31,654 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 10:48:37,984 basehttp 187 "GET / HTTP/1.1" 200 8754
+INFO 2022-08-30 10:48:38,931 basehttp 187 "GET / HTTP/1.1" 200 8754
+INFO 2022-08-30 10:48:40,752 basehttp 187 "GET / HTTP/1.1" 200 8754
+INFO 2022-08-30 10:50:16,186 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blogproject\settings.py changed, reloading.
+INFO 2022-08-30 10:50:17,000 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 10:52:00,824 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 10:52:03,637 basehttp 187 "GET / HTTP/1.1" 200 8807
+INFO 2022-08-30 10:52:12,148 basehttp 187 "GET / HTTP/1.1" 200 8807
+INFO 2022-08-30 10:52:42,994 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blogproject\settings.py changed, reloading.
+INFO 2022-08-30 10:52:43,712 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 10:52:47,305 basehttp 187 "GET / HTTP/1.1" 200 8812
