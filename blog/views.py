@@ -6,7 +6,6 @@ from django.utils.text import slugify
 from markdown.extensions.toc import TocExtension
 from .models import Post, Category, Tag
 # Create your views here.
-from django.http import HttpResponse
 
 '''文章列表'''
 
@@ -24,6 +23,9 @@ def index(request):
 
 def detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
+
+    # 阅读量+1
+    post.increase_views()
     # 添加Markdown语法拓展，包含额外拓展，语法高亮和自动生成目录
     md = markdown.Markdown(extensions=[
         'markdown.extensions.extra',

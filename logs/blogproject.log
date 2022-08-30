@@ -1570,3 +1570,16 @@ INFO 2022-08-30 16:40:17,971 autoreload 677 Watching for file changes with StatR
 INFO 2022-08-30 16:40:20,610 basehttp 187 "GET / HTTP/1.1" 200 8711
 INFO 2022-08-30 16:40:23,927 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 10205
 INFO 2022-08-30 16:40:45,360 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 10205
+INFO 2022-08-30 16:52:48,495 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-30 16:52:51,272 basehttp 187 "GET / HTTP/1.1" 200 8709
+INFO 2022-08-30 16:52:53,868 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 10215
+INFO 2022-08-30 16:52:57,681 basehttp 187 "GET / HTTP/1.1" 200 8709
+INFO 2022-08-30 16:52:59,353 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 10215
+INFO 2022-08-30 16:53:03,877 basehttp 187 "GET / HTTP/1.1" 200 8709
+INFO 2022-08-30 16:53:05,033 basehttp 187 "GET /posts/2/ HTTP/1.1" 200 10215
+INFO 2022-08-30 16:53:56,406 basehttp 187 "GET / HTTP/1.1" 200 8709
+WARNING 2022-08-30 16:53:57,683 log 241 Not Found: /full-width.html
+WARNING 2022-08-30 16:53:57,683 basehttp 187 "GET /full-width.html HTTP/1.1" 404 3237
+INFO 2022-08-30 16:56:32,291 basehttp 187 "GET / HTTP/1.1" 200 8709
+INFO 2022-08-30 17:12:01,042 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-30 17:12:01,825 autoreload 677 Watching for file changes with StatReloader
