@@ -1,11 +1,8 @@
-import re
-import markdown
-from django.shortcuts import render, get_object_or_404
-from django.utils.text import slugify
+from django.contrib import messages
+from django.db.models import Q
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import ListView, DetailView
-from markdown.extensions.toc import TocExtension
 from pure_pagination import PaginationMixin
-
 from .models import Post, Category, Tag
 
 
@@ -64,6 +61,17 @@ class PostDetailView(DetailView):
 
         # 视图必须返回一个 HttpResponse 对象
         return response
+
+def search(request):
+    q = request.GET.get('q')
+    if not q:
+        error_msg = "请输入搜索关键词"
+        messages.add_message(request, messages.ERROR, error_msg, extra_tags='danger')
+        return redirect('blog:index')
+
+    post_list = Post.objects.filter(Q(title__icontains=q) | Q(body__icontains=q))
+    return render(request, 'blog/index.html', {'post_list': post_list})
+
 
     # def get_object(self, queryset=None):
     #     # 覆写 get_object 方法的目的是因为需要对 post 的 body 值进行渲染

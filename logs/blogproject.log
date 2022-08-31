@@ -111,3 +111,83 @@ INFO 2022-08-31 14:42:12,100 basehttp 187 "GET /posts/60/ HTTP/1.1" 200 14660
 INFO 2022-08-31 14:42:23,428 basehttp 187 "GET /posts/151/ HTTP/1.1" 200 13761
 INFO 2022-08-31 14:42:31,533 basehttp 187 "GET /posts/138/ HTTP/1.1" 200 15377
 INFO 2022-08-31 14:42:45,100 basehttp 187 "GET /posts/146/ HTTP/1.1" 200 15220
+ERROR 2022-08-31 14:46:28,374 log 241 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Users\18203\blog\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\Users\18203\blog\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\Users\18203\blog\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Users\18203\blog\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Users\18203\blog\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\Users\18203\blog\lib\site-packages\django\urls\resolvers.py", line 803, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'admin' not found. 'admin' is not a valid view function or pattern name.
+ERROR 2022-08-31 14:46:28,377 basehttp 187 "GET / HTTP/1.1" 500 156311
+INFO 2022-08-31 14:47:10,622 basehttp 187 "GET / HTTP/1.1" 200 18165
+INFO 2022-08-31 14:47:12,229 basehttp 187 "GET /admin/ HTTP/1.1" 302 0
+INFO 2022-08-31 14:47:12,285 basehttp 187 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2220
+INFO 2022-08-31 14:47:12,334 basehttp 187 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2022-08-31 14:47:12,335 basehttp 187 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2022-08-31 14:47:12,336 basehttp 187 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2022-08-31 14:47:12,337 basehttp 187 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2022-08-31 14:47:12,337 basehttp 187 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2022-08-31 14:47:12,339 basehttp 187 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2022-08-31 14:47:12,341 basehttp 187 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2022-08-31 14:47:12,387 basehttp 187 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2022-08-31 14:47:12,394 basehttp 187 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2022-08-31 14:48:34,819 basehttp 187 "GET / HTTP/1.1" 200 18165
+INFO 2022-08-31 14:48:49,655 basehttp 187 "GET /posts/94/ HTTP/1.1" 200 16602
+INFO 2022-08-31 15:07:43,019 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-31 15:07:43,790 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-31 15:08:27,921 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-31 15:08:28,603 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-31 15:09:35,244 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-31 15:09:35,944 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-31 15:10:44,548 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\urls.py changed, reloading.
+INFO 2022-08-31 15:10:45,453 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-31 15:11:18,150 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-31 15:11:22,225 basehttp 187 "GET / HTTP/1.1" 200 18181
+INFO 2022-08-31 15:11:32,578 basehttp 187 "GET /search/? HTTP/1.1" 302 0
+INFO 2022-08-31 15:11:32,623 basehttp 187 "GET / HTTP/1.1" 200 18463
+INFO 2022-08-31 15:11:41,091 basehttp 187 "GET /search/? HTTP/1.1" 302 0
+INFO 2022-08-31 15:11:41,160 basehttp 187 "GET / HTTP/1.1" 200 18463
+INFO 2022-08-31 15:12:18,572 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-31 15:12:39,378 basehttp 187 "GET /search/? HTTP/1.1" 302 0
+INFO 2022-08-31 15:12:39,446 basehttp 187 "GET / HTTP/1.1" 200 18464
+INFO 2022-08-31 15:14:18,581 basehttp 187 "GET /search/?q=mark HTTP/1.1" 200 34585
+INFO 2022-08-31 15:15:18,073 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-31 15:15:18,863 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-31 15:15:21,339 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-31 15:15:32,998 basehttp 187 "GET /search/?q=mark HTTP/1.1" 200 34585
+INFO 2022-08-31 15:15:57,544 basehttp 187 "GET /search/?q=even HTTP/1.1" 200 65276
+INFO 2022-08-31 15:16:06,640 basehttp 187 "GET /posts/94/ HTTP/1.1" 200 16619
+INFO 2022-08-31 15:17:14,590 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\views.py changed, reloading.
+INFO 2022-08-31 15:17:15,393 autoreload 677 Watching for file changes with StatReloader
