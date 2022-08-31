@@ -3397,3 +3397,28 @@ INFO 2022-08-31 11:45:38,031 basehttp 187 "GET /?page=2 HTTP/1.1" 200 17934
 INFO 2022-08-31 11:45:39,817 basehttp 187 "GET /?page=3 HTTP/1.1" 200 18058
 INFO 2022-08-31 11:45:41,951 basehttp 187 "GET /?page=1 HTTP/1.1" 200 17948
 INFO 2022-08-31 11:45:44,144 basehttp 187 "GET /?page=2 HTTP/1.1" 200 17934
+INFO 2022-08-31 11:48:31,379 basehttp 187 "GET /?page=3 HTTP/1.1" 200 18058
+INFO 2022-08-31 11:48:34,039 basehttp 187 "GET /?page=4 HTTP/1.1" 200 18176
+INFO 2022-08-31 11:48:38,080 basehttp 187 "GET /?page=5 HTTP/1.1" 200 18230
+INFO 2022-08-31 11:48:41,955 basehttp 187 "GET /?page=6 HTTP/1.1" 200 18279
+INFO 2022-08-31 11:48:55,732 basehttp 187 "GET /posts/69/ HTTP/1.1" 200 12754
+INFO 2022-08-31 11:49:18,150 basehttp 187 "GET /posts/150/ HTTP/1.1" 200 16796
+INFO 2022-08-31 11:49:26,723 basehttp 187 "GET /posts/5/ HTTP/1.1" 200 30141
+WARNING 2022-08-31 11:49:26,774 log 241 Not Found: /posts/5/example.jpg
+WARNING 2022-08-31 11:49:26,775 log 241 Not Found: /posts/5/a.jpg
+WARNING 2022-08-31 11:49:26,776 basehttp 187 "GET /posts/5/example.jpg HTTP/1.1" 404 3249
+WARNING 2022-08-31 11:49:26,776 basehttp 187 "GET /posts/5/a.jpg HTTP/1.1" 404 3231
+INFO 2022-08-31 11:49:31,003 basehttp 187 "GET /categories/14/ HTTP/1.1" 200 46602
+INFO 2022-08-31 11:49:32,596 basehttp 187 "GET /posts/93/ HTTP/1.1" 200 15414
+INFO 2022-08-31 11:49:36,184 basehttp 187 "GET /categories/10/ HTTP/1.1" 200 41659
+INFO 2022-08-31 11:49:38,632 basehttp 187 "GET /posts/21/ HTTP/1.1" 200 12726
+INFO 2022-08-31 11:49:40,903 basehttp 187 "GET /categories/14/ HTTP/1.1" 200 46602
+INFO 2022-08-31 11:49:43,127 basehttp 187 "GET /posts/5/ HTTP/1.1" 200 30141
+WARNING 2022-08-31 11:49:43,172 log 241 Not Found: /posts/5/example.jpg
+WARNING 2022-08-31 11:49:43,174 log 241 Not Found: /posts/5/a.jpg
+WARNING 2022-08-31 11:49:43,175 basehttp 187 "GET /posts/5/example.jpg HTTP/1.1" 404 3249
+WARNING 2022-08-31 11:49:43,175 basehttp 187 "GET /posts/5/a.jpg HTTP/1.1" 404 3231
+INFO 2022-08-31 11:59:32,260 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\templatetags\blog_extras.py changed, reloading.
+INFO 2022-08-31 11:59:33,072 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-08-31 12:00:24,850 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blog\templatetags\blog_extras.py changed, reloading.
+INFO 2022-08-31 12:00:25,647 autoreload 677 Watching for file changes with StatReloader
