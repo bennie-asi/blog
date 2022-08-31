@@ -13,18 +13,11 @@ import os.path
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-3*$k51b%b2@kx*30+w_gukw(*sizwq2^#rpvg_sko)lm^4&k6('
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -35,8 +28,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog.apps.BlogConfig',  #注册blog应用
-    'comments.apps.CommentsConfig', #注册comments应用
+    'blog.apps.BlogConfig',  # 注册blog应用
+    'comments.apps.CommentsConfig',  # 注册comments应用
 ]
 
 MIDDLEWARE = [
@@ -54,7 +47,7 @@ ROOT_URLCONF = 'blogproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, './templates')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -79,7 +72,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-    
+
 }
 '''
 DATABASES = {
@@ -128,7 +121,7 @@ USE_TZ = False
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "blog/static/"),
+    os.path.join(BASE_DIR, "blog/../blog/static/"),
 ]
 
 # Default primary key field type
@@ -185,7 +178,7 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, "logs/blogproject.log"),  # 日志文件的位置
+            'filename': os.path.join(BASE_DIR, "logs/../logs/blogproject.log"),  # 日志文件的位置
             'maxBytes': 300 * 1024 * 1024,  # 文件最多存储 300M 的内存   日志文件满了，他会自动新建meiduo1 meiduo2
             'backupCount': 10,  # 最多十个文件
             'formatter': 'verbose'

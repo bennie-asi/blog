@@ -14,7 +14,8 @@ class IndexView(ListView):
     model = Post
     template_name = 'blog/index.html'
     context_object_name = 'post_list'
-
+#     开启分页
+    paginate_by = 10
 
 class CategoryView(ListView):
     model = Post
