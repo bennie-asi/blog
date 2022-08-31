@@ -20,11 +20,7 @@ class IndexView(PaginationMixin, ListView):
     paginate_by = 6
 
 
-class CategoryView(ListView):
-    model = Post
-    template_name = 'blog/index.html'
-    context_object_name = 'post_list'
-
+class CategoryView(IndexView):
     def get_queryset(self):
         cate = get_object_or_404(Category, pk=self.kwargs.get('pk'))
         return super(CategoryView, self).get_queryset().filter(category=cate)
@@ -42,6 +38,7 @@ class ArchiveView(IndexView):
 
 
 class TagView(IndexView):
+
     def get_queryset(self):
         t = get_object_or_404(Tag, pk=self.kwargs.get("pk"))
         return super().get_queryset().filter(tags=t)

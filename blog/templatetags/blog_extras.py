@@ -27,7 +27,7 @@ def show_archives(context):
 # 分类模板标签
 @register.inclusion_tag('blog/inclusions/_categories.html', takes_context=True)
 def show_categories(context):
-    category_list = Category.objects.annotate(num_posts=Count('post')).filter(num_posts__get=0)
+    category_list = Category.objects.annotate(num_posts=Count('post'))
     return {
         'category_list': category_list,
     }
@@ -38,5 +38,5 @@ def show_categories(context):
 def show_tags(context):
     tag_list = Tag.objects.annotate(num_posts=Count('post')).filter(num_posts__gt=0)
     return {
-        'tag_list': Tag.objects.all(),
+        'tag_list': tag_list,
     }
