@@ -4,18 +4,21 @@ from django.shortcuts import render, get_object_or_404
 from django.utils.text import slugify
 from django.views.generic import ListView, DetailView
 from markdown.extensions.toc import TocExtension
+from pure_pagination import PaginationMixin
+
 from .models import Post, Category, Tag
 
 
 # Create your views here.
 
 # 类视图
-class IndexView(ListView):
+class IndexView(PaginationMixin, ListView):
     model = Post
     template_name = 'blog/index.html'
     context_object_name = 'post_list'
-#     开启分页
-    paginate_by = 10
+    #     开启分页
+    paginate_by = 6
+
 
 class CategoryView(ListView):
     model = Post
