@@ -62,6 +62,7 @@ class PostDetailView(DetailView):
         # 视图必须返回一个 HttpResponse 对象
         return response
 
+
 def search(request):
     q = request.GET.get('q')
     if not q:
@@ -72,6 +73,9 @@ def search(request):
     post_list = Post.objects.filter(Q(title__icontains=q) | Q(body__icontains=q))
     return render(request, 'blog/index.html', {'post_list': post_list})
 
+
+def about(request):
+    return render(request, 'about.html')
 
     # def get_object(self, queryset=None):
     #     # 覆写 get_object 方法的目的是因为需要对 post 的 body 值进行渲染
@@ -88,6 +92,8 @@ def search(request):
     #     post.toc = m.group(1) if m is not None else ''
     #
     #     return post
+
+
 # 视图函数
 # '''文章列表'''
 #
@@ -150,3 +156,8 @@ def search(request):
 #     t = get_object_or_404(Tag, pk=pk)
 #     post_list = Post.objects.filter(tags=t)
 #     return render(request, 'blog/index.html', context={'post_list': post_list})
+def admin(request):
+    return redirect('admin')
+
+
+
