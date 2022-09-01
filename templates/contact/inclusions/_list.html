@@ -1,0 +1,14 @@
+<h3>留言列表，共 <span>{{ contact_count }}</span> 条评论</h3>
+<ul class="comment-list list-unstyled">
+  {% for contact in contact_list %}
+    <li class="contact-item">
+      <span class="nickname">{{ contact.name }}</span>
+      <time class="submit-date" datetime="{{ contact.created_time }}">{{ contact.created_time }}</time>
+      <div class="text">
+        {{ contact.message|linebreaks }}
+      </div>
+    </li>
+  {% empty %}
+    暂无留言
+  {% endfor %}
+</ul>

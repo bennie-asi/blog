@@ -1,4 +1,12 @@
 {% extends  'base.html' %}
+{% load contact_extras %}
 {% block main %}
-
+    <section class="comment-area" id="comment-area">
+        <h3>留言</h3>
+            {% show_contact_form  %}
+                <hr>
+        <div class="comment-list-panel">
+            {% show_contact  %}
+        </div>
+    </section>
 {% endblock %}

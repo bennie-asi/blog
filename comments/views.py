@@ -5,6 +5,7 @@ from django.views.decorators.http import require_POST
 from .forms import CommentForm
 from django.contrib import messages
 
+
 # 限制请求方式为POST
 @require_POST
 def comment(request, post_pk):
