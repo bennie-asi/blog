@@ -1241,3 +1241,6 @@ INFO 2022-09-01 10:47:50,652 basehttp 187 "GET /admin/comments/comment/ HTTP/1.1
 INFO 2022-09-01 10:47:50,693 basehttp 187 "GET /admin/jsi18n/ HTTP/1.1" 200 8603
 INFO 2022-09-01 10:48:21,403 basehttp 187 "GET /admin/contact/contact/ HTTP/1.1" 200 11449
 INFO 2022-09-01 10:48:21,450 basehttp 187 "GET /admin/jsi18n/ HTTP/1.1" 200 8603
+INFO 2022-09-01 10:51:16,694 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 10:51:25,597 basehttp 187 "GET / HTTP/1.1" 200 18080
+INFO 2022-09-01 10:51:31,406 basehttp 187 "GET /?page=2 HTTP/1.1" 200 18065
