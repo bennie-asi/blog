@@ -1244,3 +1244,167 @@ INFO 2022-09-01 10:48:21,450 basehttp 187 "GET /admin/jsi18n/ HTTP/1.1" 200 8603
 INFO 2022-09-01 10:51:16,694 autoreload 677 Watching for file changes with StatReloader
 INFO 2022-09-01 10:51:25,597 basehttp 187 "GET / HTTP/1.1" 200 18080
 INFO 2022-09-01 10:51:31,406 basehttp 187 "GET /?page=2 HTTP/1.1" 200 18065
+INFO 2022-09-01 10:54:05,446 basehttp 187 "GET /admin/ HTTP/1.1" 200 6334
+INFO 2022-09-01 10:54:07,978 basehttp 187 "GET /about/ HTTP/1.1" 200 6498
+INFO 2022-09-01 10:54:09,927 basehttp 187 "GET /contact/ HTTP/1.1" 200 7908
+INFO 2022-09-01 10:54:12,975 basehttp 187 "GET /about/ HTTP/1.1" 200 6498
+INFO 2022-09-01 10:54:27,397 basehttp 187 "GET /contact/ HTTP/1.1" 200 7908
+INFO 2022-09-01 10:54:42,275 basehttp 187 "GET /contact/ HTTP/1.1" 200 7908
+INFO 2022-09-01 10:54:44,194 basehttp 187 "GET / HTTP/1.1" 200 17829
+INFO 2022-09-01 11:19:53,623 basehttp 187 "GET / HTTP/1.1" 200 17829
+INFO 2022-09-01 11:19:57,063 basehttp 187 "GET /admin/ HTTP/1.1" 200 6334
+INFO 2022-09-01 11:20:01,150 basehttp 187 "GET /admin/blog/post/add/ HTTP/1.1" 200 11621
+INFO 2022-09-01 11:20:01,197 basehttp 187 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2022-09-01 11:20:01,203 basehttp 187 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2022-09-01 11:20:01,207 basehttp 187 "GET /admin/jsi18n/ HTTP/1.1" 200 8603
+INFO 2022-09-01 11:20:01,211 basehttp 187 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2022-09-01 11:20:01,214 basehttp 187 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2022-09-01 11:20:01,229 basehttp 187 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2022-09-01 11:42:55,735 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blogproject\settings\local.py changed, reloading.
+INFO 2022-09-01 11:42:58,687 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 11:43:06,788 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blogproject\settings\local.py changed, reloading.
+INFO 2022-09-01 11:43:08,094 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 11:43:10,611 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 11:44:23,610 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 11:44:46,963 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 11:44:53,655 basehttp 187 "GET / HTTP/1.1" 200 17829
+INFO 2022-09-01 11:45:23,239 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blogproject\settings\local.py changed, reloading.
+INFO 2022-09-01 11:45:24,035 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 11:46:06,082 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 11:49:54,985 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 11:51:18,014 autoreload 266 D:\Users\18203\Desktop\work\blogproject\blogproject\settings\local.py changed, reloading.
+INFO 2022-09-01 11:51:18,790 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 11:51:21,361 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 11:53:19,994 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 11:55:28,264 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 11:55:30,369 basehttp 187 "GET / HTTP/1.1" 200 17829
+INFO 2022-09-01 11:55:31,722 basehttp 187 "GET /static/blog/css/pace.css HTTP/1.1" 200 189
+INFO 2022-09-01 11:55:31,826 basehttp 187 "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117154
+INFO 2022-09-01 11:55:31,842 basehttp 187 "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8374
+INFO 2022-09-01 11:55:31,843 basehttp 187 "GET /static/blog/css/custom.css HTTP/1.1" 200 15473
+INFO 2022-09-01 11:55:31,844 basehttp 187 "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84322
+INFO 2022-09-01 11:55:31,862 basehttp 187 "GET /static/blog/js/script.js HTTP/1.1" 200 4461
+INFO 2022-09-01 11:55:31,874 basehttp 187 "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35458
+INFO 2022-09-01 11:55:31,883 basehttp 187 "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12332
+WARNING 2022-09-01 11:55:32,841 log 241 Not Found: /favicon.ico
+WARNING 2022-09-01 11:55:32,841 basehttp 187 "GET /favicon.ico HTTP/1.1" 404 4022
+INFO 2022-09-01 11:55:37,626 basehttp 187 "GET /admin HTTP/1.1" 301 0
+INFO 2022-09-01 11:55:37,811 basehttp 187 "GET /admin/ HTTP/1.1" 302 0
+INFO 2022-09-01 11:55:37,981 basehttp 187 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2220
+INFO 2022-09-01 11:55:38,092 basehttp 187 "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+INFO 2022-09-01 11:55:38,094 basehttp 187 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+INFO 2022-09-01 11:55:38,107 basehttp 187 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2022-09-01 11:55:38,109 basehttp 187 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+INFO 2022-09-01 11:55:38,109 basehttp 187 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+INFO 2022-09-01 11:55:38,126 basehttp 187 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2022-09-01 11:55:38,244 basehttp 187 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+INFO 2022-09-01 11:55:38,303 basehttp 187 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2022-09-01 11:55:38,314 basehttp 187 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+WARNING 2022-09-01 11:55:38,389 log 241 Not Found: /favicon.ico
+WARNING 2022-09-01 11:55:38,389 basehttp 187 "GET /favicon.ico HTTP/1.1" 404 4022
+INFO 2022-09-01 11:55:45,142 basehttp 187 "GET / HTTP/1.1" 200 17829
+INFO 2022-09-01 11:55:45,231 basehttp 187 "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117154
+INFO 2022-09-01 11:55:45,247 basehttp 187 "GET /static/blog/css/pace.css HTTP/1.1" 200 189
+INFO 2022-09-01 11:55:45,247 basehttp 187 "GET /static/blog/css/custom.css HTTP/1.1" 200 15473
+INFO 2022-09-01 11:55:45,248 basehttp 187 "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35458
+INFO 2022-09-01 11:55:45,274 basehttp 187 "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12332
+INFO 2022-09-01 11:55:45,285 basehttp 187 "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84322
+INFO 2022-09-01 11:55:45,287 basehttp 187 "GET /static/blog/js/script.js HTTP/1.1" 200 4461
+INFO 2022-09-01 11:55:45,287 basehttp 187 "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8374
+WARNING 2022-09-01 11:55:46,666 log 241 Not Found: /favicon.ico
+WARNING 2022-09-01 11:55:46,667 basehttp 187 "GET /favicon.ico HTTP/1.1" 404 4022
+INFO 2022-09-01 11:56:09,369 basehttp 80 - Broken pipe from ('172.16.1.124', 38474)
+INFO 2022-09-01 11:56:09,369 basehttp 80 - Broken pipe from ('172.16.1.124', 38466)
+INFO 2022-09-01 11:56:09,369 basehttp 80 - Broken pipe from ('172.16.1.124', 38464)
+INFO 2022-09-01 11:56:09,369 basehttp 80 - Broken pipe from ('172.16.1.124', 38460)
+INFO 2022-09-01 11:56:09,369 basehttp 80 - Broken pipe from ('172.16.1.124', 38462)
+INFO 2022-09-01 11:56:09,370 basehttp 80 - Broken pipe from ('172.16.1.124', 38456)
+INFO 2022-09-01 11:56:25,717 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 11:56:34,002 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 12:00:19,744 basehttp 187 "GET / HTTP/1.1" 200 17829
+WARNING 2022-09-01 12:00:20,147 log 241 Not Found: /favicon.ico
+WARNING 2022-09-01 12:00:20,148 basehttp 187 "GET /favicon.ico HTTP/1.1" 404 4022
+INFO 2022-09-01 17:55:59,580 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 17:56:15,847 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 17:56:38,817 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-09-01 17:56:42,261 basehttp 187 "GET / HTTP/1.1" 200 17829
+WARNING 2022-09-01 17:56:42,897 log 241 Not Found: /favicon.ico
+WARNING 2022-09-01 17:56:42,897 basehttp 187 "GET /favicon.ico HTTP/1.1" 404 4022
+INFO 2022-09-01 17:57:47,893 basehttp 187 "GET /admin/ HTTP/1.1" 302 0
+INFO 2022-09-01 17:57:48,018 basehttp 187 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2220
+INFO 2022-09-01 17:57:49,216 basehttp 187 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+INFO 2022-09-01 17:57:49,238 basehttp 187 "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+INFO 2022-09-01 17:57:49,238 basehttp 187 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+INFO 2022-09-01 17:57:49,238 basehttp 187 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2022-09-01 17:57:49,245 basehttp 187 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2022-09-01 17:57:49,248 basehttp 187 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+INFO 2022-09-01 17:57:49,271 basehttp 187 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+INFO 2022-09-01 17:57:49,320 basehttp 187 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2022-09-01 17:57:49,322 basehttp 187 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2022-09-01 17:57:55,690 basehttp 187 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2022-09-01 17:57:55,747 basehttp 187 "GET /admin/ HTTP/1.1" 200 6334
+INFO 2022-09-01 17:57:55,784 basehttp 187 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO 2022-09-01 17:57:55,800 basehttp 187 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2022-09-01 17:57:55,801 basehttp 187 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2022-09-01 17:57:55,873 basehttp 187 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2022-09-01 17:58:01,767 basehttp 187 "GET /admin/blog/post/add/ HTTP/1.1" 200 11621
+INFO 2022-09-01 17:58:01,822 basehttp 187 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2022-09-01 17:58:01,840 basehttp 187 "GET /admin/jsi18n/ HTTP/1.1" 200 8603
+INFO 2022-09-01 17:58:01,840 basehttp 187 "GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+INFO 2022-09-01 17:58:01,841 basehttp 187 "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2022-09-01 17:58:01,842 basehttp 187 "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+INFO 2022-09-01 17:58:01,850 basehttp 187 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8919
+INFO 2022-09-01 17:58:01,864 basehttp 187 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2022-09-01 17:58:01,865 basehttp 187 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO 2022-09-01 17:58:01,865 basehttp 187 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+INFO 2022-09-01 17:58:01,869 basehttp 187 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+INFO 2022-09-01 17:58:01,876 basehttp 187 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2022-09-01 17:58:01,891 basehttp 187 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2022-09-01 17:58:01,907 basehttp 187 "GET /static/admin/js/change_form.js HTTP/1.1" 200 1043
+INFO 2022-09-01 17:58:01,911 basehttp 187 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2022-09-01 17:59:59,814 basehttp 187 "GET /admin/ HTTP/1.1" 200 6334
+INFO 2022-09-01 18:00:00,928 basehttp 187 "GET /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2022-09-01 18:00:00,953 basehttp 187 "GET /admin/ HTTP/1.1" 200 6334
+INFO 2022-09-01 18:00:04,242 basehttp 187 "GET /posts/5/ HTTP/1.1" 200 29441
+WARNING 2022-09-01 18:00:04,344 log 241 Not Found: /posts/5/example.jpg
+WARNING 2022-09-01 18:00:04,348 log 241 Not Found: /posts/5/a.jpg
+WARNING 2022-09-01 18:00:04,349 basehttp 187 "GET /posts/5/example.jpg HTTP/1.1" 404 4046
+WARNING 2022-09-01 18:00:04,350 basehttp 187 "GET /posts/5/a.jpg HTTP/1.1" 404 4028
+INFO 2022-09-01 18:00:29,870 basehttp 187 "GET /admin/ HTTP/1.1" 200 6334
+INFO 2022-09-01 18:00:36,065 basehttp 187 "GET /admin/contact/contact/add/ HTTP/1.1" 200 9030
+INFO 2022-09-01 18:00:36,120 basehttp 187 "GET /admin/jsi18n/ HTTP/1.1" 200 8603
+INFO 2022-09-01 18:00:37,798 basehttp 187 "GET /admin/ HTTP/1.1" 200 6334
+INFO 2022-09-01 18:02:15,851 basehttp 187 "GET /admin/blog/post/add/ HTTP/1.1" 200 11621
+INFO 2022-09-01 18:02:15,915 basehttp 187 "GET /admin/jsi18n/ HTTP/1.1" 200 8603
+INFO 2022-09-01 18:02:19,640 basehttp 187 "GET /admin/comments/comment/ HTTP/1.1" 200 54457
+INFO 2022-09-01 18:02:19,692 basehttp 187 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+INFO 2022-09-01 18:02:19,705 basehttp 187 "GET /admin/jsi18n/ HTTP/1.1" 200 8603
+INFO 2022-09-01 18:02:19,730 basehttp 187 "GET /static/admin/js/filters.js HTTP/1.1" 200 966
+INFO 2022-09-01 18:02:19,742 basehttp 187 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2022-09-01 18:02:19,751 basehttp 187 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2022-09-01 18:02:30,304 basehttp 187 "GET / HTTP/1.1" 200 17829
+INFO 2022-09-01 18:02:31,500 basehttp 187 "GET /posts/5/ HTTP/1.1" 200 29441
+WARNING 2022-09-01 18:02:31,567 log 241 Not Found: /posts/5/a.jpg
+WARNING 2022-09-01 18:02:31,570 log 241 Not Found: /posts/5/example.jpg
+WARNING 2022-09-01 18:02:31,570 basehttp 187 "GET /posts/5/a.jpg HTTP/1.1" 404 4028
+WARNING 2022-09-01 18:02:31,571 basehttp 187 "GET /posts/5/example.jpg HTTP/1.1" 404 4046
+INFO 2022-09-01 18:03:10,920 basehttp 187 "GET /all/rss/ HTTP/1.1" 200 277457
+INFO 2022-09-01 18:03:25,098 basehttp 187 "GET /?page=2 HTTP/1.1" 200 17814
+INFO 2022-09-01 18:04:35,430 basehttp 187 "GET /?page=3 HTTP/1.1" 200 17938
+INFO 2022-09-01 18:04:41,039 basehttp 187 "GET /archives/2022/8/ HTTP/1.1" 200 17515
+INFO 2022-09-01 18:05:11,306 basehttp 187 "GET /posts/5/ HTTP/1.1" 200 29441
+WARNING 2022-09-01 18:05:11,397 log 241 Not Found: /posts/5/example.jpg
+WARNING 2022-09-01 18:05:11,401 log 241 Not Found: /posts/5/a.jpg
+WARNING 2022-09-01 18:05:11,401 basehttp 187 "GET /posts/5/example.jpg HTTP/1.1" 404 4046
+WARNING 2022-09-01 18:05:11,402 basehttp 187 "GET /posts/5/a.jpg HTTP/1.1" 404 4028
+INFO 2022-09-01 18:05:29,592 basehttp 187 "GET /archives/2022/8/?page=2 HTTP/1.1" 200 17500
+INFO 2022-09-01 18:07:22,217 basehttp 187 "GET /contact/ HTTP/1.1" 200 7908
+INFO 2022-09-01 18:07:25,100 basehttp 187 "GET /about/ HTTP/1.1" 200 6498
+INFO 2022-09-01 18:07:25,154 basehttp 187 "GET /static/blog/img/me.jpg HTTP/1.1" 200 63353
+INFO 2022-09-01 18:07:27,617 basehttp 187 "GET / HTTP/1.1" 200 17829
+INFO 2022-09-01 18:07:29,397 basehttp 187 "GET /posts/128/ HTTP/1.1" 200 16528
+INFO 2022-09-01 18:07:33,995 basehttp 187 "GET /posts/5/ HTTP/1.1" 200 29441
+WARNING 2022-09-01 18:07:34,059 log 241 Not Found: /posts/5/example.jpg
+WARNING 2022-09-01 18:07:34,061 log 241 Not Found: /posts/5/a.jpg
+WARNING 2022-09-01 18:07:34,063 basehttp 187 "GET /posts/5/a.jpg HTTP/1.1" 404 4028
+WARNING 2022-09-01 18:07:34,064 basehttp 187 "GET /posts/5/example.jpg HTTP/1.1" 404 4046
