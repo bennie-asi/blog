@@ -1408,3 +1408,108 @@ WARNING 2022-09-01 18:07:34,059 log 241 Not Found: /posts/5/example.jpg
 WARNING 2022-09-01 18:07:34,061 log 241 Not Found: /posts/5/a.jpg
 WARNING 2022-09-01 18:07:34,063 basehttp 187 "GET /posts/5/a.jpg HTTP/1.1" 404 4028
 WARNING 2022-09-01 18:07:34,064 basehttp 187 "GET /posts/5/example.jpg HTTP/1.1" 404 4046
+INFO 2023-01-03 17:45:13,934 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-03 17:45:38,183 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-03 17:47:06,068 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-03 17:54:38,100 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-03 17:55:06,944 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-03 17:55:28,002 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-03 17:55:32,108 basehttp 161 "GET / HTTP/1.1" 200 17879
+INFO 2023-01-03 17:55:32,231 basehttp 161 "GET /static/blog/css/pace.css HTTP/1.1" 200 189
+INFO 2023-01-03 17:55:32,249 basehttp 161 "GET /static/blog/js/pace.min.js HTTP/1.1" 200 12332
+INFO 2023-01-03 17:55:32,252 basehttp 161 "GET /static/blog/css/bootstrap.min.css HTTP/1.1" 200 117154
+INFO 2023-01-03 17:55:32,263 basehttp 161 "GET /static/blog/js/modernizr.custom.js HTTP/1.1" 200 8374
+INFO 2023-01-03 17:55:32,267 basehttp 161 "GET /static/blog/css/custom.css HTTP/1.1" 200 15473
+INFO 2023-01-03 17:55:32,268 basehttp 161 "GET /static/blog/js/jquery-2.1.3.min.js HTTP/1.1" 200 84322
+INFO 2023-01-03 17:55:32,274 basehttp 161 "GET /static/blog/js/bootstrap.min.js HTTP/1.1" 200 35458
+INFO 2023-01-03 17:55:32,284 basehttp 161 "GET /static/blog/js/script.js HTTP/1.1" 200 4461
+WARNING 2023-01-03 17:55:33,775 log 230 Not Found: /favicon.ico
+WARNING 2023-01-03 17:55:33,776 basehttp 161 "GET /favicon.ico HTTP/1.1" 404 4019
+INFO 2023-01-03 18:00:33,052 basehttp 161 "GET / HTTP/1.1" 200 17879
+INFO 2023-01-03 18:00:36,591 basehttp 161 "GET /?page=2 HTTP/1.1" 200 17864
+INFO 2023-01-03 18:00:46,260 basehttp 161 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-01-03 18:00:46,432 basehttp 161 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2216
+INFO 2023-01-03 18:00:46,490 basehttp 161 "GET /static/admin/css/login.css HTTP/1.1" 200 939
+INFO 2023-01-03 18:00:46,491 basehttp 161 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+INFO 2023-01-03 18:00:46,494 basehttp 161 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+INFO 2023-01-03 18:00:46,494 basehttp 161 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+INFO 2023-01-03 18:00:46,495 basehttp 161 "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+INFO 2023-01-03 18:00:46,503 basehttp 161 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2023-01-03 18:00:46,559 basehttp 161 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2023-01-03 18:00:46,560 basehttp 161 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+ERROR 2023-01-03 18:00:51,208 log 230 Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django_redis\cache.py", line 31, in _decorator
+    return method(self, *args, **kwargs)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django_redis\cache.py", line 137, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django_redis\client\default.py", line 666, in has_key
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\contrib\admin\sites.py", line 414, in login
+    return LoginView.as_view(**defaults)(request)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\views\decorators\debug.py", line 89, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\contrib\auth\views.py", line 63, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\views\generic\edit.py", line 142, in post
+    return self.form_valid(form)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\contrib\auth\views.py", line 92, in form_valid
+    auth_login(self.request, form.get_user())
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\contrib\auth\__init__.py", line 111, in login
+    request.session.cycle_key()
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\contrib\sessions\backends\base.py", line 344, in cycle_key
+    self.create()
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\contrib\sessions\backends\cache.py", line 43, in create
+    self._session_key = self._get_new_session_key()
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\contrib\sessions\backends\base.py", line 196, in _get_new_session_key
+    if not self.exists(session_key):
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\contrib\sessions\backends\cache.py", line 70, in exists
+    return bool(session_key) and (self.cache_key_prefix + session_key) in self._cache
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django\core\cache\backends\base.py", line 212, in __contains__
+    return self.has_key(key)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django_redis\cache.py", line 38, in _decorator
+    raise e.__cause__
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\django_redis\client\default.py", line 664, in has_key
+    return client.exists(key) == 1
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\redis\commands\core.py", line 1635, in exists
+    return self.execute_command("EXISTS", *names)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\redis\client.py", line 1255, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\redis\connection.py", line 1389, in get_connection
+    connection.connect()
+  File "D:\Users\18203\pythonInterpreter\blogproject\lib\site-packages\redis\connection.py", line 604, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+ERROR 2023-01-03 18:00:51,233 basehttp 161 "POST /admin/login/?next=/admin/ HTTP/1.1" 500 195271
+INFO 2023-01-03 18:01:21,065 basehttp 161 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-01-03 18:01:21,149 basehttp 161 "GET /admin/ HTTP/1.1" 200 6080
+INFO 2023-01-03 18:01:21,199 basehttp 161 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO 2023-01-03 18:01:21,225 basehttp 161 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2023-01-03 18:01:21,226 basehttp 161 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2023-01-03 18:01:21,311 basehttp 161 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2023-01-03 18:01:24,412 basehttp 161 "GET /admin/ HTTP/1.1" 200 6080
