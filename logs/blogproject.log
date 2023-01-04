@@ -1513,3 +1513,8 @@ INFO 2023-01-03 18:01:21,225 basehttp 161 "GET /static/admin/img/icon-addlink.sv
 INFO 2023-01-03 18:01:21,226 basehttp 161 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
 INFO 2023-01-03 18:01:21,311 basehttp 161 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
 INFO 2023-01-03 18:01:24,412 basehttp 161 "GET /admin/ HTTP/1.1" 200 6080
+INFO 2023-01-03 21:03:39,697 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-03 21:04:16,054 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-03 21:04:28,045 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-03 21:12:16,152 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-03 21:12:36,807 autoreload 637 Watching for file changes with StatReloader
